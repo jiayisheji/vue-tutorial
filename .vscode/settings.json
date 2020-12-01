@@ -1,0 +1,69 @@
+{
+    // 文件排序
+    "explorer.sortOrder": "type",
+    // Editor settings
+    "editor.snippetSuggestions": "top",
+    "editor.autoIndent": "full",
+    "editor.codeLens": false,
+    "editor.cursorBlinking": "solid",
+    "editor.cursorSmoothCaretAnimation": true,
+    "editor.cursorStyle": "line",
+    "editor.fontSize": 16,
+    "editor.fontLigatures": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSave": true,
+    "editor.letterSpacing": 0.5,
+    "editor.lineHeight": 25,
+    "editor.minimap.enabled": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "on",
+    "editor.tabSize": 2,
+    "editor.wordWrap": "on",
+    "editor.codeActionsOnSave": {
+        // For ESLint
+        "source.fixAll.eslint": true,
+    },
+    // eslint
+    "eslint.format.enable": true,
+    "eslint.validate": [
+      "javascript",
+      "vue",
+      "html",
+    ],
+    // vetur    
+    "vetur.format.defaultFormatter.html": "js-beautify-html", //格式化.vue中html
+    "vetur.format.defaultFormatter.js": "prettier-eslint", //让vue中的js按编辑器自带的ts格式进行格式化
+    "vetur.format.defaultFormatterOptions": {
+        "wrap_attributes": "force-expand-multiline",
+        "js-beautify-html": {
+        "wrap_attributes": "force-expand-multiline",
+        "end_with_newline": false
+        },
+        "prettier": {
+        "singleQuote": true,
+        "semi": false,
+        "eslintIntegration": true
+        }
+    },
+    // emmet
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    // 以下配置大多是设置默认格式化程序
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "octref.vetur"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+}
