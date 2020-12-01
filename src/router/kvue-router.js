@@ -8,7 +8,7 @@ let Vue;
 class VueRouter {
   /**
    * Vue要在这里用
-   * @param {Object} options 
+   * @param {Object} options 配置参数
    * @param {Array} options.routes 路由配置 
    * @param {string} options.base 根路径 
    * @param {string} options.mode 路由模式  'history' | 'hash'
@@ -35,7 +35,7 @@ VueRouter.install = function (_Vue) {
   Vue = _Vue
 
   // 利用全局混入延迟调用后续代码
-  Vue.mixin({
+  Vue.mixin({   // 内部会把这个对象给每个组件的属性混在一起
     beforeCreate() {
       // 任务1：挂载$router
       // 以后每个组件都会调用该方法
